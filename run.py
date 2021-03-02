@@ -41,5 +41,11 @@ def main(hosturl):
             #print(data)
             
 if __name__ == "__main__":
-  main("http://127.0.0.1")
+    print('Enter Host url(eg.http://127.0.0.1):')
+    host = input()
+    # if the user doesn't enter anything 
+    if host == "":
+        host = 'http://127.0.0.1'
+        
+    main(str(host))
   
